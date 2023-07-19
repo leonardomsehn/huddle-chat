@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Open+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body::before {
+    content: "";
+    background-image: url(./imagens/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+body {
+    background-color: rgb(110, 78, 197);
+}
+
+.cabecalho {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   padding: 48px;
+   margin-left: 30px;
+}
+
+.cabecalho-imagem {
+    height: 48px;
+}
+
+.conteudo {
+    margin-top: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.conteudo-principal-escrito-titulo {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    margin-top: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.conteudo-principal-escrito-botao {
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    width: 190px;
+    height: 55px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color:rgb(110, 78, 197);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #fa79e7;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+.rodape {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    gap: 12px;
+    
+}
+
